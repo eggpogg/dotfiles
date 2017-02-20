@@ -30,4 +30,9 @@ function peco-history-selection() {
 
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
-
+#
+# local config
+#
+if [ -e ~/.zshrc_local ]; then
+  source ~/.zshrc_local
+fi
