@@ -1,0 +1,7 @@
+[user]
+	name = eggpogg
+	email = eggpogg.t@gmail.com
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+[alias]
+    delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
