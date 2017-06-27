@@ -2,7 +2,12 @@
 #  一般的な設定
 # ############################
 
-# tmuxの起動シェルをzshにする
+#-aに変更する
+set -g prefix C-o
+
+# C-bのキーバインドを解除する
+unbind C-b
+
 set -g default-shell /bin/zsh
 set -g default-command ""
 

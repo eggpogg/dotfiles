@@ -4,7 +4,7 @@
 # ############################
 
  # 設定ファイルをリロードする
-bind r source-file ~/.tmux.conf \; display "Reloaded!"
+bind r source-file ~/.tmux.conf \; display "Reloaded! Config."
 
 # Vimのキーバインドでペインを移動する
 bind h select-pane -L
