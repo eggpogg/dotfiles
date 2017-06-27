@@ -8,6 +8,7 @@ ln -snf ~/dotfiles/.viminfo ~/.viminfo
 ln -snf ~/dotfiles/.vimrc ~/.vimrc
 ln -snf ~/dotfiles/.zshrc ~/.zshrc
 ln -snf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -snf ~/dotfiles/.tigrc ~/.tigrc
 
 #
 # set pretzo
