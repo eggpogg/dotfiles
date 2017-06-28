@@ -38,3 +38,6 @@ set-option -g bell-action none
 set -g lock-after-time 600
 set-option -g lock-command vlock
 
+# connectionの再接続
+set -g @continuum-restore 'on'
+set -g @continuum-boot 'on'

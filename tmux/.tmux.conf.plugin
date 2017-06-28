@@ -14,6 +14,9 @@ set -g @plugin 'tmux-plugins/tmux-copycat' # tmux search plugin like vim search
 set -g @plugin 'tmux-plugins/tmux-yank' # yank to system clipboard
 
 set -g @plugin 'tmux-plugins/tmux-resurrect' # tmux restore plugin
+set -g @plugin 'tmux-plugins/tmux-continuum' # tmux auto restore
 set -g @plugin 'seebi/tmux-colors-solarized' # for theme
+
+set -g @plugin 'tmux-plugins/tmux-sidebar' # prefix+C-TAB open tree of current path.
 
 run '~/.tmux/plugins/tpm/tpm'
