@@ -6,6 +6,11 @@ export LESSCHARSET=utf-8
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+#
+# --------------------------------
+# import functions
+# --------------------------------
+source ~/dotfiles/functions/.functions
 # --------------------------------
 # Customize to your needs...
 # --------------------------------
@@ -52,3 +57,4 @@ export GOROOT_BOOTSTRAP=$HOME/go1.4
 export GOPATH=$HOME/Workspaces/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=/opt/local/bin:$PATH
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

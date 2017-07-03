@@ -9,6 +9,7 @@ set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-battery' # battery percentage
 set -g @plugin 'tmux-plugins/tmux-online-status' # online status
 set -g @plugin 'tmux-plugins/tmux-cpu'
+set -g @plugin 'tmux-plugins/tmux-mem'
 
 set -g @plugin 'tmux-plugins/tmux-copycat' # tmux search plugin like vim search
 set -g @plugin 'tmux-plugins/tmux-yank' # yank to system clipboard

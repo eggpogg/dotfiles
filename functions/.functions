@@ -1,0 +1,20 @@
+function url-encode() {
+  local input="${1}"
+  local output=""
+
+  ##一文字ずつURL形式に変換
+  local i=0
+  for (( i=0 ; i<${#input} ; i++ )); do
+     local o=""
+     local c=${input:$i:1}
+     case "$c" in
+        [-_.~a-zA-Z0-9] ) o="${c}" ;;   ##変換せず
+        * ) printf -v o '%%%02x' "'$c"  ##URL形式に変換
+     esac
+     output+=$o
+  done
+
+  echo $output
+}
+
+alias url-encode=url-encode

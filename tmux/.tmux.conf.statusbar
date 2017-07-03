@@ -8,15 +8,15 @@ set -g status-fg white
 set -g status-bg black
 
 # size of window status
-set -g status-right-length 60
 set -g status-left-length 40
+set -g status-right-length 130
 
 # text of window status
 set -g status-left "#[fg=green]Session: #S #[fg=yellow]Pane: #I #[fg=cyan]Window: #P"
-set -g status-right "#[fg=cyan] Online: #{online_status}, CPU:#{cpu_percentage}, Battery: #{battery_percentage}, #[fg=cyan] %a %h-%d %H:%M"
+set -g status-right '#[fg=cyan] cpu: #{cpu_percentage}, mem: #(/Users/takakato/.nvm/versions/node/v6.11.0/bin/tmux-mem --format :percent)% #[fg=white] | #[fg=green] %h/%d %H:%M:%S'
 
 # リフレッシュの間隔を設定する(デフォルト 15秒)
-set -g status-interval 60
+set -g status-interval 15
 
 set -g status-justify centre # ウィンドウリストの位置を中心寄せにする
 set -g status-position top # ステータスバーを上部に表示する
