@@ -13,7 +13,7 @@ set -g status-right-length 130
 
 # text of window status
 set -g status-left "#[fg=green]Session: #S #[fg=yellow]Pane: #I #[fg=cyan]Window: #P"
-set -g status-right '#[fg=cyan] cpu: #{cpu_percentage}, mem: #(/Users/takakato/.nvm/versions/node/v6.11.0/bin/tmux-mem --format :percent)% #[fg=white] | #[fg=green] %h/%d %H:%M:%S'
+set -g status-right '#[fg=cyan] cpu: #{cpu_percentage}, mem: #(/Users/takakato/.nvm/versions/node/v6.11.0/bin/tmux-mem --format :percent)% #[fg=white]|#[fg=green]%h/%d %H:%M:%S'
 
 # リフレッシュの間隔を設定する(デフォルト 15秒)
 set -g status-interval 15
