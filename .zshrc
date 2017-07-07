@@ -20,6 +20,7 @@ source ~/dotfiles/functions/.functions
 alias -g @g='| grep'
 alias -g @x='| xargs'
 alias -g @pbc='| pbcopy'
+alias -g adb='adb-peco'
 #
 # peco
 #
