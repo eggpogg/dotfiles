@@ -46,10 +46,7 @@ export NVM_DIR="$HOME/.nvm"
 #
 #PATH
 #
-export PATH=$PATH:/Users/kihare/Workspaces/config/android-sdk-macosx-2.4/platform-tools
-export PATH=$PATH:/Users/kihare/Workspaces/config/android-sdk-macosx-2.4/tools
-export PATH=$PATH:/Users/kihare/Workspaces/config/android-sdk-macosx-2.4/build-tools/22.0.1
-export PATH=$PATH:/Users/kihare/Workspaces/config/dex2jar-2.0
+
 #
 # GVM golang version manaager
 #

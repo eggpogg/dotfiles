@@ -25,3 +25,12 @@ ln -snf ~/dotfiles/prezto/zpreztorc $HOME/.zprezto/runcoms/zpreztorc
 ln -snf ~/dotfiles/prezto/zprofile $HOME/.zprezto/runcoms/zprofile
 ln -snf ~/dotfiles/prezto/zshenv $HOME/.zprezto/runcoms/zshenv
 
+#
+# brew package
+#
+if [ `which SOME_COMMAND` ]; then
+    /bin/bash brew_package.sh
+else
+    echo 'not brew command.'
+    echo 'ref: https://brew.sh/index_ja.html'
+fi
