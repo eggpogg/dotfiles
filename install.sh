@@ -28,7 +28,7 @@ ln -snf ~/dotfiles/prezto/zshenv $HOME/.zprezto/runcoms/zshenv
 #
 # brew package
 #
-if [ `which SOME_COMMAND` ]; then
+if [ `which brew` ]; then
     /bin/bash brew_package.sh
 else
     echo 'not brew command.'
