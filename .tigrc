@@ -1,2 +1,59 @@
-bind main    R !git rebase -i %(commit)
-bind diff    R !git rebase -i %(commit)
+# bind main    R !git rebase -i %(commit)
+# bind diff    R !git rebase -i %(commit)
+
+bind generic ^      ?git reset --soft HEAD^
+
+# C で commit (refs での C は checkout, main での C は cherry-pick だが上書きする)
+bind generic C      !git commit
+bind refs    C      !git commit
+bind main    C      !git commit
+
+# Alt-c で commit --allow-empty
+bind generic <Esc>c !git commit --allow-empty
+
+# + で commit --amend
+bind generic +      !git commit --amend --allow-empty
+
+# M で merge
+bind main    M      ?git merge %(branch)
+bind diff    M      ?git merge %(branch)
+bind refs    M      ?git merge %(branch)
+bind main    <Esc>m ?git merge %(commit)
+bind diff    <Esc>m ?git merge %(commit)
+
+# R で rebase
+bind main    R      ?git rebase %(branch)
+bind diff    R      ?git rebase %(branch)
+bind refs    R      ?git rebase %(branch)
+bind main    <Esc>r ?git rebase %(commit)
+bind diff    <Esc>r ?git rebase %(commit)
+
+# I で rebase -i
+bind main    I      ?git rebase -i %(branch)
+bind diff    I      ?git rebase -i %(branch)
+bind refs    I      ?git rebase -i %(branch)
+bind main    <Esc>i ?git rebase -i %(commit)
+bind diff    <Esc>i ?git rebase -i %(commit)
+
+# = で checkout
+bind main    =      ?git checkout %(branch)
+bind refs    =      ?git checkout %(branch)
+bind main    <Esc>= ?git checkout %(commit)
+
+# - で直前のブランチに戻る (checkout -)
+bind generic -      ?git checkout -
+
+# T で tag
+bind main    T ?git tag "%(prompt Enter tag name: )" %(commit)
+bind refs    T ?git tag "%(prompt Enter tag name: )" %(branch)
+
+# B でブランチを作成してそのブランチに移動 (checkout -b)
+bind main    B      ?git checkout -b "%(prompt Enter branch name: )" %(branch)
+bind refs    B      ?git checkout -b "%(prompt Enter branch name: )" %(branch)
+bind main    <Esc>b ?git checkout -b "%(prompt Enter branch name: )" %(commit)
+
+# U で pull
+bind generic U      ?git pull %(remote)
+
+# リフレッシュするタイミング
+set refresh-mode = auto

@@ -6,3 +6,6 @@ set columns=180
 colorscheme koehler
 " ダーク系のカラースキームを使う
 set background=dark
+
+syntax on
+color dracula

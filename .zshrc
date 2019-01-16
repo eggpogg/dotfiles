@@ -21,6 +21,9 @@ alias -g @g='| grep'
 alias -g @x='| xargs'
 alias -g @pbc='| pbcopy'
 alias -g adb='adb-peco'
+alias -g adbo='/Users/takakato/Library/Android/sdk/platform-tools/adb'
+alias javarepl='java -jar ~/workspaces/tool/java-repl/javarepl-431.jar'
+alias jrepl=javarepl
 #
 # peco
 #
@@ -46,7 +49,8 @@ export NVM_DIR="$HOME/.nvm"
 #
 #PATH
 #
-
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$PATH:~/workspaces/mongodb/3.2.17/bin
 #
 # GVM golang version manaager
 #
