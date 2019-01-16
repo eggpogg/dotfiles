@@ -2,6 +2,7 @@
 	name = eggpogg
 	email = eggpogg.t@gmail.com
 [core]
-	editor = vim -c \"set fenc=utf-8\"
+	editor = nvim -c \"set fenc=utf-8\"
+	autocrlf = input
 [alias]
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
