@@ -1,4 +1,11 @@
 #! /bin/bash
+
+#
+# setup
+#
+# 作業ディレクトリに移動
+cd $(dirname $0)
+
 #
 # default
 #
@@ -29,7 +36,7 @@ ln -snf ~/dotfiles/prezto/zshenv $HOME/.zprezto/runcoms/zshenv
 # brew package
 #
 if [ `which brew` ]; then
-    /bin/bash brew_package.sh
+    ./packages.sh
 else
     echo 'not brew command.'
     echo 'ref: https://brew.sh/index_ja.html'
