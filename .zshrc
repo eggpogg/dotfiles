@@ -26,7 +26,7 @@ alias -g @g='| grep'
 alias -g @x='| xargs'
 alias -g @pbc='| pbcopy'
 alias -g adb='adb-peco'
-alias -g adbo='/Users/takakato/Library/Android/sdk/platform-tools/adb'
+alias -g adbo='~/Library/Android/sdk/platform-tools/adb'
 alias javarepl='java -jar ~/workspaces/tool/java-repl/javarepl-431.jar'
 alias jrepl=javarepl
 #
