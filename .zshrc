@@ -61,7 +61,6 @@ export NVM_DIR="$HOME/.nvm"
 #PATH
 #
 export PATH=$JAVA_HOME/bin:$PATH
-export PATH=$PATH:~/workspaces/mongodb/3.2.17/bin
 #
 # GVM golang version manaager
 #
@@ -70,4 +69,7 @@ export GOROOT_BOOTSTRAP=$HOME/go1.4
 export GOPATH=$HOME/Workspaces/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=/opt/local/bin:$PATH
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#
+# This loads nvm bash_completion
+#
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  

@@ -32,6 +32,9 @@ ln -snf ~/dotfiles/prezto/zpreztorc $HOME/.zprezto/runcoms/zpreztorc
 ln -snf ~/dotfiles/prezto/zprofile $HOME/.zprezto/runcoms/zprofile
 ln -snf ~/dotfiles/prezto/zshenv $HOME/.zprezto/runcoms/zshenv
 
+# theme
+ln -snf ~/dotfiles/prezto/theme/prompt_mypure_setup $HOME/.zprezto/modules/prompt/functions
+
 #
 # brew package
 #
