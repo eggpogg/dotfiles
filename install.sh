@@ -7,6 +7,14 @@
 cd $(dirname $0)
 
 #
+# TODO: zshが入っているかの確認
+#
+
+#
+# TODO: pretzが入っているかの確認
+#
+
+#
 # default
 #
 ln -snf ~/dotfiles/.gvimrc ~/.gvimrc

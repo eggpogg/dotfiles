@@ -10,6 +10,7 @@ brew install zsh-syntax-highlighting
 brew install rbenv
 brew install ruby-build
 brew install rbenv-gemset
+brew install nvim
 
 # rbenv setting
 rm -rf ~/.rbenv/plugins/ruby-build
