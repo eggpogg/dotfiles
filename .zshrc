@@ -66,6 +66,7 @@ export NVM_DIR="$HOME/.nvm"
 #PATH
 #
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 #
 # GVM golang version manaager
 #
