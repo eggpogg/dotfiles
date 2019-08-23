@@ -36,6 +36,11 @@ alias -g adbo='~/Library/Android/sdk/platform-tools/adb'
 alias javarepl='java -jar ~/workspaces/tool/java-repl/javarepl-431.jar'
 alias jrepl=javarepl
 #
+# trash function
+#
+mkdir -p ~/trash 2>/dev/null
+function trash() { mv $1 ~/trash }
+#
 # peco
 #
 function peco-history-selection() {
@@ -61,6 +66,7 @@ export NVM_DIR="$HOME/.nvm"
 #PATH
 #
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 #
 # GVM golang version manaager
 #
