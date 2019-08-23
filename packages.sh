@@ -1,5 +1,8 @@
 #! /bin/bash
-brew update --force && brew upgrade
+brew tap caskroom/cask
+brew cask upgrade
+brew update --force
+brew upgrade
 
 brew install tig
 brew install tree
