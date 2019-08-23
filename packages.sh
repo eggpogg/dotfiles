@@ -11,6 +11,14 @@ brew install rbenv
 brew install ruby-build
 brew install rbenv-gemset
 brew install nvim
+brew install nvm
+brew install docker
+brew cask install docker
+
+# nvm setting
+nvm install --lts
+nvm alias default lts/*
+npm update -g npm
 
 # rbenv setting
 rm -rf ~/.rbenv/plugins/ruby-build

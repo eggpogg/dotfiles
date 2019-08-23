@@ -51,4 +51,5 @@ if [ `which brew` ]; then
 else
     echo 'not brew command.'
     echo 'ref: https://brew.sh/index_ja.html'
+    ./packages.sh
 fi
