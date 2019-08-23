@@ -50,7 +50,6 @@ ln -snf ~/dotfiles/prezto/theme/prompt_mypure_setup $HOME/.zprezto/modules/promp
 if [ `which brew` ]; then
     ./packages.sh
 else
-    echo 'not brew command.'
-    echo 'ref: https://brew.sh/index_ja.html'
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ./packages.sh
 fi
