@@ -1,4 +1,5 @@
 #! /bin/bash
+echo 'start install...'
 
 #
 # setup
