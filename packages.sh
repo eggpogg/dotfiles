@@ -1,4 +1,6 @@
 #! /bin/bash
+brew update --force && brew upgrade
+
 brew install tig
 brew install tree
 brew install peco
@@ -14,6 +16,11 @@ brew install nvim
 brew install nvm
 brew install docker
 brew cask install docker
+brew install pyenv
+
+# pyenv
+pyenv install 3.7.2
+pyenv global 3.7.2
 
 # nvm setting
 nvm install --lts
