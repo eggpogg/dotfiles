@@ -29,6 +29,8 @@ ln -snf ~/dotfiles/.tigrc ~/.tigrc
 #
 # set pretzo
 #
+# git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
 ln -snf ~/dotfiles/prezto/zlogin ~/.zlogin
 ln -snf ~/dotfiles/prezto/zlogout ~/.zlogout
 ln -snf ~/dotfiles/prezto/zpreztorc ~/.zpreztorc
@@ -47,9 +49,4 @@ ln -snf ~/dotfiles/prezto/theme/prompt_mypure_setup $HOME/.zprezto/modules/promp
 #
 # brew package
 #
-if [ `which brew` ]; then
-    ./packages.sh
-else
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    ./packages.sh
-fi
+./packages.sh
