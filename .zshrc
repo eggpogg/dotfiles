@@ -35,6 +35,10 @@ alias -g adb='adb-peco'
 alias -g adbo='~/Library/Android/sdk/platform-tools/adb'
 alias javarepl='java -jar ~/workspaces/tool/java-repl/javarepl-431.jar'
 alias jrepl=javarepl
+alias top=htop
+alias man=tldr
+alias find=fd
+alias du=ncdu
 #
 # trash function
 #
@@ -67,6 +71,7 @@ export NVM_DIR="$HOME/.nvm"
 #
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
+export PATH="$PATH:$HOME/workspaces/flutter/flutter/bin"
 #
 # GVM golang version manaager
 #

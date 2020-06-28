@@ -6,3 +6,8 @@
 	autocrlf = input
 [alias]
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
