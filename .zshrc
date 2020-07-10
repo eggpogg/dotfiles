@@ -39,6 +39,17 @@ alias top=htop
 alias man=tldr
 alias find=fd
 alias du=ncdu
+alias ssh-add-normal='ssh-add -D > /dev/null 2>&1; kill -0 ${SSH_AGENT_PID} > /dev/null 2>&1; if [ $? -ne 0 ]; then eval `ssh-agent`; fi; ssh-add ~/.ssh/id_rsa'
+alias zgit='cat ~/.zprezto/modules/git/alias.zsh | grep "alias "'
+alias d='docker'
+alias dc='docker-compose'
+alias dcnt='docker container'
+alias dcur='docker container ls -f status=running -l -q'
+alias dexec='docker container exec -it $(dcur)'
+alias dimg='docker image'
+alias drun='docker container run --rm -d'
+alias drunit='docker container run --rm -it'
+alias dstop='docker container stop $(dcur)'
 #
 # trash function
 #
@@ -83,4 +94,4 @@ export PATH=/opt/local/bin:$PATH
 #
 # This loads nvm bash_completion
 #
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
